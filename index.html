@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <!--css -->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!--font awesome -->
+    <script
+      src="https://kit.fontawesome.com/c084a66896.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--navigation menu -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="images/adventure_trails_hike_logo.png"
+            alt="Helios travel logo"
+          />
+        </a>
+      </div>
+      <nav class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon" onclick="topNavFunction()">
+          &#9776;
+        </a>
+        <ul>
+          <li class="style-nav">
+            <a href="index.html" class="top-nav-active">Home</a>
+          </li>
+
+          <div class="dropdown">
+            <button class="dropbtn">
+              Our hikes
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="short-hikes.html">Short hikes</a>
+              <a href="long-hikes.html">Long hikes</a>
+              <a href="camping-hikes.html">Camping hikes</a>
+            </div>
+          </div>
+
+          <li class="style-nav"><a href="travel-info.html">Travel info</a></li>
+          <li class="style-nav"><a href="about.html">About us</a></li>
+          <li class="style-nav"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--homepage main img -->
+      <section class="intro-img-homepage__headings">
+        <h1>Adventure Trails Hikes</h1>
+        <h2>Fulfil your wanderlust</h2>
+      </section>
+      <section class="intro-homepage">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="536.937"
+          height="189.727"
+          viewBox="0 0 536.937 189.727"
+        >
+          <path
+            id="Path_3"
+            data-name="Path 3"
+            d="M1376.7,885.932l-113.416-92.987-15.95,15.95-108.726-112.69-32.32,42.116h-14.176l-49.827,51.708-45.036-37.948L839.768,880.607l102.405-46.454h87.681l71.171-68.535,23.7,15.625L1105.9,816.917l30.437-19.18,91.746,46.288,30.024-14.176Z"
+            transform="translate(-839.768 -696.205)"
+            fill="#6c9ead"
+            fill-rule="evenodd"
+          />
+        </svg>
+        <div class="intro-img-homepage__row">
+          <div class="intro-img-homepage__column">
+            <img
+              src="images/homepage_jumbotron_img_01_resize.jpeg"
+              alt="Snow"
+              style="width: 100%"
+            />
+          </div>
+          <div class="intro-img-homepage__column">
+            <img
+              src="images/homepage_jumbotron_img_02.jpeg"
+              alt="Forest"
+              style="width: 100%"
+            />
+          </div>
+          <div class="intro-img-homepage__column">
+            <img
+              src="images/homepage_jumbotron_img_03_resize.jpeg"
+              alt="Mountains"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+
+        <div class="intro-img-homepage__row">
+          <div class="intro-img-homepage__column">
+            <img
+              src="images/homepage_jumbotron_img_04_resize.jpeg"
+              alt="Snow"
+              style="width: 100%"
+            />
+          </div>
+          <div class="intro-img-homepage__column">
+            <img
+              src="images/homepage_jumbotron_img_05_resize.jpeg"
+              alt="Forest"
+              style="width: 100%"
+            />
+          </div>
+          <div class="intro-img-homepage__column">
+            <img
+              src="images/homepage_jumbotron_img_06_resize.jpeg"
+              alt="Mountains"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--homepage popular hikes -->
+      <section class="homepage-popular-hikes__heading">
+        <h2>Most popular hikes</h2>
+      </section>
+      <section class="homepage-popular-hikes">
+        <div class="homepage-popular-hikes__row">
+          <div class="homepage-popular-hikes__column">
+            <div class="homepage-popular-hikes__card">
+              <img
+                src="images/yellowstone_park_img_02_resize.jpeg"
+                alt="Jane"
+                style="width: 100%"
+              />
+              <div class="homepage-popular-hikes__container">
+                <h2>Camping Yellowstone Park</h2>
+                <p class="title">
+                  Sleep under the stars in one of USAs largest wilderness parks.
+                  Yellowstone has exhilarating canyons, forests, rivers, as well
+                  as hot springs and geysers.
+                </p>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-solid fa-campground"></i>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="homepage-popular-hikes__column">
+            <div class="homepage-popular-hikes__card">
+              <img
+                src="images/patagonia_argentina_chile_img_01_resize.jpeg"
+                alt="Mike"
+                style="width: 100%"
+              />
+              <div class="homepage-popular-hikes__container">
+                <h2>Patagonia, Argentina/Chile</h2>
+                <p class="title">
+                  A two-week intense tour, including Refugio Frey, Cerro
+                  Castillo, and Exploradores Glacier. This is a demanding tour,
+                  but well worth the effort!
+                </p>
+                <i class="fa-solid fa-earth-americas"></i>
+                <i class="fa-solid fa-person-hiking"></i>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="homepage-popular-hikes__column">
+            <div class="homepage-popular-hikes__card">
+              <img
+                src="images/weekend_in_the_pyrenees_img_01_resize.jpeg"
+                alt="John"
+                style="width: 100%"
+              />
+              <div class="homepage-popular-hikes__container">
+                <h2>Weekend in the Pyrenees</h2>
+                <p class="title">
+                  Wildlife Park Parc Naturel Régional des Pyrénées Catalanes.
+                  The trip includes a visit to a Cathar castle as well as an
+                  exhibition of local birds of prey.
+                </p>
+
+                <i class="fa-solid fa-earth-europe"></i>
+                <i class="fa-solid fa-landmark"></i>
+                <p><button class="button">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--js files-->
+    <script src="js/hamburgerMenu.js"></script>
+  </body>
+</html>
