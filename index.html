@@ -47,7 +47,7 @@
 
           <li class="style-nav"><a href="travel-info.html">Travel info</a></li>
           <li class="style-nav"><a href="about.html">About us</a></li>
-          <li class="style-nav"><a href="contact.html">Contact</a></li>
+          <!-- <li class="style-nav"><a href="contact.html">Contact</a></li> -->
         </ul>
       </nav>
     </header>
@@ -129,8 +129,12 @@
       </section>
       <section class="homepage-popular-hikes">
         <div class="homepage-popular-hikes__row">
-          <div class="homepage-popular-hikes__column">
-            <div class="homepage-popular-hikes__card">
+          <div
+            class="homepage-popular-hikes__column homepage-popular-hikes__flip-card"
+          >
+            <div
+              class="homepage-popular-hikes__card homepage-popular-hikes__flip-card-inner"
+            >
               <img
                 src="images/yellowstone_park_img_02_resize.jpeg"
                 alt="Jane"
@@ -145,13 +149,22 @@
                 </p>
                 <i class="fa-solid fa-earth-americas"></i>
                 <i class="fa-solid fa-campground"></i>
-                <p><button class="button">Contact</button></p>
+                <!-- <p><button class="button">Contact</button></p> -->
+              </div>
+              <div class="homepage-popular-hikes__flip-card-back">
+                <h2>Only</h2>
+                <p>USD250,-</p>
+                <p><button class="button">Book now !</button></p>
               </div>
             </div>
           </div>
 
-          <div class="homepage-popular-hikes__column">
-            <div class="homepage-popular-hikes__card">
+          <div
+            class="homepage-popular-hikes__column homepage-popular-hikes__flip-card"
+          >
+            <div
+              class="homepage-popular-hikes__card homepage-popular-hikes__flip-card-inner"
+            >
               <img
                 src="images/patagonia_argentina_chile_img_01_resize.jpeg"
                 alt="Mike"
@@ -166,13 +179,22 @@
                 </p>
                 <i class="fa-solid fa-earth-americas"></i>
                 <i class="fa-solid fa-person-hiking"></i>
-                <p><button class="button">Contact</button></p>
+                <!-- <p><button class="button">Contact</button></p> -->
+              </div>
+              <div class="homepage-popular-hikes__flip-card-back">
+                <h2>Only</h2>
+                <p>USD 250,-</p>
+                <p><button class="button">Book now !</button></p>
               </div>
             </div>
           </div>
 
-          <div class="homepage-popular-hikes__column">
-            <div class="homepage-popular-hikes__card">
+          <div
+            class="homepage-popular-hikes__column homepage-popular-hikes__flip-card"
+          >
+            <div
+              class="homepage-popular-hikes__card homepage-popular-hikes__flip-card-inner"
+            >
               <img
                 src="images/weekend_in_the_pyrenees_img_01_resize.jpeg"
                 alt="John"
@@ -188,13 +210,107 @@
 
                 <i class="fa-solid fa-earth-europe"></i>
                 <i class="fa-solid fa-landmark"></i>
-                <p><button class="button">Contact</button></p>
+                <!-- <p><button class="button">Contact</button></p> -->
+              </div>
+              <div class="homepage-popular-hikes__flip-card-back">
+                <h2>Only</h2>
+                <p>USD 250,-</p>
+                <p><button class="button">Book now !</button></p>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!--homepage our hikes cta -->
+      <section class="homepage-our-hikes__flex-container">
+        <div class="homepage-our-hikes__flex-item">
+          <a href="short-hikes.html">
+            Short hikes
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </div>
+
+        <div class="homepage-our-hikes__flex-item">
+          <a href="long-hikes.html">
+            Long hikes
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </div>
+        <div class="homepage-our-hikes__flex-item">
+          <a href="camping-hikes.html">
+            Camping hikes
+            <i class="fas fa-angle-double-right"></i>
+          </a>
+        </div>
+      </section>
+      <!--homepage cta sustainable tourism -->
+
+      <section class="homepage__sustainable-cta">
+        <a href="about.html">
+          <div class="homepage__sustainabl-bg-img"></div>
+          <h2>Read more about our focus on sustainable tourism</h2>
+        </a>
+      </section>
+      <!--homepage about Adventure trails hike -->
+      <section class="homepage__about-us">
+        <div class="homepage__heading">
+          <h2>Welcome to Adventure Trails Hikes!</h2>
+        </div>
+        <div class="homepage__text">
+          <p>
+            We aim to offer the most exciting, challenging, educational, and
+            cultural extreme hikes, in exhilarating locations around the globe.
+            We have a variety of standard packages, as well as offering
+            specialized tours that will cater to your specific requirements.
+          </p>
+        </div>
+      </section>
     </main>
+    <!--footer-->
+    <footer class="footer">
+      <!--  Company logo  -->
+      <section class="container-footer-info">
+        <div class="left-footer-info left-footer-logo">
+          <a href="index.html">
+            <img
+              src="images/adventure_trails_hike_logo_footer.png"
+              alt="Helios Travel logo"
+            />
+          </a>
+        </div>
+        <!-- Footer company info -->
+        <div class="right-footer-container-info">
+          <h2>Adventure Trails Hikes</h2>
+          <div class="right-footer-nav right-footer-nav-style">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="travel-info.html">Travel info</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="short-hikes.html">Short hikes</a></li>
+              <li><a href="long-hikes.html">Long hikes</a></li>
+              <li><a href="camping-hikes.html">Camping hikes</a></li>
+              <!-- <li><a href="contact.html">Contact us</a></li> -->
+            </ul>
+          </div>
+          <!-- Follow us on social media -->
+          <div class="right-footer-social-media">
+            <h2>Follow us on social media</h2>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          </div>
+          <!-- Copyright information -->
+          <div class="right-copyright-info">
+            <h3>
+              &copy; 2022 Adventure Trail Hikes | Designed and coded by Aina
+              Bjerke
+            </h3>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!--js files-->
     <script src="js/hamburgerMenu.js"></script>
   </body>

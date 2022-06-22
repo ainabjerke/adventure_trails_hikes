@@ -346,15 +346,65 @@ h6 {
   color: #6c9ead;
   font-size: 26px;
   margin-right: 14px;
+  margin-bottom: 16px;
 }
 
-@media screen and (max-width: 650px) {
-  .homepage-popular-hikes__column {
-    width: 100%;
-    display: block;
-  }
+/********flip card************/
+
+.homepage-popular-hikes__flip-card {
+  background-color: transparent;
+  /* width: 300px;
+  height: 300px; */
+  perspective: 1000px;
 }
 
+.homepage-popular-hikes__flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* text-align: center; */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.homepage-popular-hikes__flip-card:hover
+  .homepage-popular-hikes__flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.homepage-popular-hikes__flip-card-front,
+.homepage-popular-hikes__flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 441px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  margin-top: -441px;
+}
+
+.homepage-popular-hikes__flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.homepage-popular-hikes__flip-card-back {
+  background-color: #e1dfdb;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+.homepage-popular-hikes__flip-card-back h2 {
+  font-size: 20px;
+  color: #004c42;
+  margin-top: 100px;
+}
+
+.homepage-popular-hikes__flip-card-back p {
+  font-size: 32px;
+  color: #007a77;
+}
 .homepage-popular-hikes__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
@@ -380,14 +430,908 @@ h6 {
   border: none;
   outline: 0;
   display: inline-block;
-  padding: 8px;
+  padding: 16px;
   color: white;
-  background-color: #000;
+  background-color: #9d5f3e;
   text-align: center;
   cursor: pointer;
-  width: 100%;
+  width: 92%;
+  font-size: 18px;
+  border-radius: 3px;
 }
 
 .button:hover {
-  background-color: #555;
+  /* background-color: #9d5f3e; */
+  filter: brightness(115%);
+}
+
+@media screen and (max-width: 940px) {
+  .homepage-popular-hikes__flip-card-back {
+    height: 456px;
+    margin-top: -455px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .homepage-popular-hikes__column {
+    width: 100%;
+    display: block;
+  }
+
+  .homepage-popular-hikes__flip-card-back {
+    /* height: 554px;
+    margin-top: -542px; */
+    /* height: 561px;
+    margin-top: -556px; */
+    height: 567px;
+    margin-top: -563px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .homepage-popular-hikes__flip-card-back {
+    height: 478px;
+    margin-top: -475px;
+  }
+
+  .homepage-popular-hikes {
+    padding-top: 36px;
+    padding-bottom: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .homepage-popular-hikes__flip-card-back {
+    height: 456px;
+    margin-top: -456px;
+  }
+}
+/************* our hikes cta*************/
+.homepage-our-hikes__flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-left: 0px;
+  padding: 18px 14px;
+  /* width: 100%; */
+  background-color: #e1dfdb;
+  margin-top: 19px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.homepage-our-hikes__flex-container a {
+  background-color: #ffffff;
+  text-align: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 17px;
+  width: 100%;
+  padding-left: 84px;
+  padding-right: 84px;
+  color: #6c9ead;
+}
+
+.homepage-our-hikes__flex-container a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1065px) {
+  .homepage-our-hikes__flex-container {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    margin-top: 18px;
+  }
+}
+
+/*********/
+
+.homepage__sustainabl-bg-img {
+  background-image: url("/images/sustainability_img_02_resize.jpeg");
+}
+
+.homepage__sustainabl-bg-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 187px;
+  margin-top: 34px;
+  /* opacity: 0.3; */
+  width: 100%;
+}
+
+.homepage__sustainable-cta h2 {
+  font-size: 30px;
+  margin-top: -104px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.homepage__sustainable-cta a {
+  text-decoration: none;
+}
+
+.homepage__sustainable-cta a:hover {
+  filter: brightness(115%);
+}
+
+@media screen and (max-width: 730px) {
+  .homepage__sustainable-cta h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .homepage__sustainabl-bg-img {
+    height: 64px;
+  }
+
+  .homepage__sustainable-cta h2 {
+    font-size: 18px;
+    margin-top: -51px;
+  }
+}
+/*****************home page about us*************************/
+.homepage__about-us {
+  margin-top: 76px;
+  background-color: #6c9ead;
+  padding: 24px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.homepage__heading h2,
+.homepage__text p {
+  text-align: center;
+  color: #ffffff;
+}
+
+/*********************************** global footer style ****************************************/
+
+.container-footer-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.left-footer-info,
+.right-footer-container-info {
+  background-color: #6c7b86;
+}
+
+.left-footer-info {
+  /* margin: 0px 0px 4px 54px; */
+  margin: 0px 0px 4px 4px;
+  padding: 9.7px;
+}
+
+.left-footer-logo img {
+  height: 5.8em;
+  margin-top: 23px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.right-footer-container-info {
+  flex: 50%;
+  /* margin: 0px 54px 4px 3px; */
+  margin: 0px 4px 4px 3px;
+  padding: 10px;
+}
+
+.right-footer-container-info h2 {
+  color: #ffffff;
+}
+.right-footer-nav ul {
+  column-count: 3;
+  list-style-type: none;
+  margin: 0px 60px 37px 0px;
+  position: relative;
+}
+
+.right-footer-nav-style a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 38px;
+  padding: 2px;
+  text-decoration: none;
+}
+
+.right-footer-nav-style a:hover {
+  color: #cebfb9;
+  text-decoration: underline;
+}
+
+/****************** Footer social media style ***************/
+
+.right-footer-social-media i {
+  font-size: 69px;
+  height: 96px;
+  width: 76px;
+}
+
+.fa-facebook-square,
+.fa-instagram-square,
+.fa-twitter-square,
+.fa-youtube-square {
+  color: #cebfb9;
+}
+
+.fa-facebook-square:hover,
+.fa-instagram-square:hover,
+.fa-twitter-square:hover,
+.fa-youtube-square:hover {
+  filter: brightness(130%);
+}
+
+/************** Footer copyrigt style *********************/
+.right-copyright-info h3 {
+  color: #fff;
+  font-size: 11px;
+}
+
+/*************************** Responsive tablet footer style  *********************************/
+/********************************************************************************************/
+
+@media screen and (max-width: 1039px) {
+  .container-footer-info {
+    flex-direction: column;
+  }
+
+  .left-footer-info,
+  .right-footer-container-info {
+    margin: 4px 9px 0px 9px;
+    padding: 60.7px;
+    text-align: center;
+  }
+
+  .right-footer-nav ul {
+    column-count: 1;
+  }
+}
+
+/********************************************************************************************/
+/*************************** Responsive mobile footer style  *********************************/
+/********************************************************************************************/
+
+@media screen and (max-width: 649px) {
+  .right-footer-nav ul {
+    margin-right: 45px;
+  }
+
+  .right-footer-container-info h2 {
+    text-align: center;
+  }
+}
+
+/*****************short hike page*************************/
+.short-hike-page__main-img {
+  background-image: url("/images/short_hike_page_jumbotron_img_01_resize.jpeg");
+}
+
+.long-hike-page__main-img {
+  background-image: url("/images/long_hike_page_jumbotron_img_01_resize.jpeg");
+}
+
+.camping-hike-page__main-img {
+  background-image: url("/images/camping_hike_page_jumbotron_img_01_resize.jpeg");
+}
+
+.about-page__main-img {
+  background-image: url("/images/about_page_jumbotron_img_01_resize.jpeg");
+}
+
+.travel-info-page__main-img {
+  background-image: url("/images/faq_page_jumbotron_img_01_resize.jpeg");
+}
+
+.long-hike-page__main-img {
+  margin-top: 25px;
+}
+
+.long-hike-page__main-img {
+  height: 438px;
+}
+
+.short-hike-page__main-img,
+/* .long-hike-page__main-img, */
+.camping-hike-page__main-img,
+.about-page__main-img,
+.travel-info-page__main-img {
+  height: 421px;
+}
+
+.short-hike-page__main-img,
+.long-hike-page__main-img,
+.camping-hike-page__main-img,
+.about-page__main-img,
+.travel-info-page__main-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 421px; */
+  /* margin-top: -150px; */
+  opacity: 0.5;
+  width: 100%;
+}
+
+.short-hike-page__text h1,
+.short-hike-page__text h2,
+.short-hike-page__text h3,
+.long-hike-page__text h1,
+.long-hike-page__text h2,
+.long-hike-page__text h3,
+.camping-hike-page__text h1,
+.camping-hike-page__text h2,
+.camping-hike-page__text h3,
+.about-page__text h1,
+.about-page__text h2,
+.about-page__text h3,
+.travel-info-page__text h1,
+.travel-info-page__text h2,
+.travel-info-page__text h3 {
+  color: #004c42;
+}
+
+.short-hike-page__text,
+.long-hike-page__text,
+.camping-hike-page__text,
+.about-page__text,
+.travel-info-page__text {
+  left: 527px;
+  max-width: 800px;
+  padding: 30px;
+  position: relative;
+  text-align: left;
+  top: -193px;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: #707070;
+}
+
+.short-hike-page__btn-show-more,
+.long-hike-page__btn-show-more,
+.camping-hike-page__btn-show-more,
+.about-page__btn-show-more,
+.travel-info-page__btn-show-more {
+  background-color: #9d5f3e;
+}
+
+/* .product-page-btn__show-more {
+  background-color: #004c42;
+}
+
+.long-hike-page__btn-show-more {
+  background-color: #007a77;
+} */
+
+.short-hike-page__btn-show-more,
+.long-hike-page__btn-show-more,
+.camping-hike-page__btn-show-more,
+.about-page__btn-show-more,
+.travel-info-page__btn-show-more {
+  color: #fff;
+  padding: 7px 72px;
+  border-radius: 4px;
+  font-size: 1em;
+  position: relative;
+  top: 13px;
+}
+
+.short-hike-page__btn-show-more,
+.long-hike-page__btn-show-more,
+.camping-hike-page__btn-show-more,
+.about-page__btn-show-more,
+.travel-info-page__btn-show-more {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+
+.short-hike-page__btn-show-more:hover,
+.long-hike-page__btn-show-more:hover,
+.camping-hike-page__btn-show-more:hover,
+.about-page__btn-show-more:hover,
+.travel-info-page__btn-show-more:hover {
+  filter: brightness(115%);
+}
+
+@media screen and (max-width: 850px) {
+  .short-hike-page__text,
+  .long-hike-page__text,
+  .camping-hike-page__tex,
+  .about-page__text,
+  .travel-info-page__text {
+    left: 474px;
+    margin-top: -13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .short-hike-page__text,
+  .long-hike-page__text,
+  .camping-hike-page__text,
+  .about-page__text,
+  .travel-info-page__text {
+    left: 57%;
+    margin-top: -8px;
+  }
+
+  .short-hike-page__main-img,
+  .long-hike-page__main-img,
+  .camping-hike-page__main-img,
+  .about-page__main-img {
+    margin-top: -90px;
+  }
+
+  .travel-info-page__main-img {
+    margin-top: -88px;
+  }
+}
+
+/************short hike info**************/
+.short-hikes-trip__heading {
+  margin-top: -284px;
+}
+.long-hikes-trip__heading {
+  margin-top: -258px;
+}
+
+.camping-hikes-trip__heading {
+  margin-top: -258px;
+}
+.short-hikes__info,
+.long-hikes__info,
+.camping-hikes__info,
+.sustainability__info {
+  /* margin-top: -236px; */
+  background-color: #e1dfdb;
+  padding: 24px;
+  /* margin-right: 4px;
+  margin-left: 4px; */
+}
+
+.short-hikes__text p,
+.long-hikes__text p,
+.camping-hikes__text p,
+.sustainability__text p {
+  text-align: center;
+  color: #707070;
+}
+
+.short-hikes__heading h2,
+.long-hikes__heading h2,
+.camping-hikes__heading h2,
+.sustainability__heading h2,
+.travel-info__heading h2 {
+  text-align: center;
+  font-size: 43px;
+  color: #6c9ead;
+  /* margin-top: -246px; */
+}
+
+/************short hike info accodrion**************/
+.accordion {
+  background-color: #c7d1ce;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: #6c9ead;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  color: #707070;
+}
+@media screen and (max-width: 850px) {
+  .accordion {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .accordion {
+    padding: 22px;
+  }
+}
+
+.our_guide_btn {
+  border-radius: 5px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  color: #6c9ead;
+  border: 2px solid #707070;
+}
+.our_guide_btn {
+  width: 100%;
+  padding: 16px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  /* margin-left: 10px; */
+  font-size: 1.5em;
+}
+.our_guide_btn:hover {
+  filter: brightness(115%);
+  text-decoration: underline;
+}
+@media screen and (max-width: 800px) {
+  .our_guide_btn {
+    top: -17px;
+    position: relative;
+    /* width: 97.4%; */
+  }
+}
+@media screen and (max-width: 500px) {
+  .our_guide_btn {
+    /* width: 95.9%; */
+    margin-top: 34px;
+  }
+}
+/************About**************/
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  /* font-size: 30px; */
+  text-align: center;
+  margin-top: -240px;
+  /* background-color: #c7d1ce; */
+}
+
+.flex-container__about {
+  background-color: #c7d1ce;
+}
+
+.flex-container-item {
+  flex: 50%;
+  margin-top: -223px;
+  padding-left: 1px;
+}
+
+.flex-container-item img {
+  width: 100%;
+}
+
+.flex-container-item h2 {
+  font-size: 30px;
+  margin-top: -104px;
+  color: #ffffff;
+}
+
+.flex-container-item p {
+  font-size: 20px;
+}
+
+/* .flex-container-item a {
+  text-decoration: none;
+}
+
+.flex-container-item a:hover {
+  text-decoration: none;
+  filter: brightness(90%);
+  color: #707070;
+} */
+
+.flex-container__about img {
+  width: 52%;
+  border-radius: 50%;
+  height: 118px;
+  display: block;
+  margin-left: 73px;
+  margin-top: 59px;
+  margin-bottom: 30px;
+}
+
+.sustainability__bg-img {
+  width: 52%;
+  /* border-radius: 50%; */
+  height: 36px;
+  display: block;
+  /* margin-left: 73px; */
+  margin-top: 59px;
+  margin-top: 10px;
+  /* margin-bottom: 30px; */
+}
+
+.flex-container__sustainability i {
+  margin-left: 10px;
+  font-size: 63px;
+  margin-top: 18px;
+}
+
+/* .flex-container-customer-reviews {
+  margin-top: 59px;
+} */
+
+.flex-item {
+  padding: 18px;
+  flex: 50%;
+  text-align: center;
+  /* margin-right: 1px; */
+  background-color: #ffffff;
+  opacity: 0.7;
+  color: #707070;
+  margin: 11px;
+  /* background-color: #c7d1ce; */
+}
+
+.flex-item h2 {
+  font-size: 20px;
+  color: #707070;
+}
+
+/* .flex-item h3 {
+  font-size: 14px;
+}
+
+.flex-item h4 {
+  font-size: 12px;
+} */
+
+/* .flex-container-customer-reviews__main-heading {
+  margin-top: -55px;
+  margin-left: 91px;
+}
+
+.flex-container-customer-reviews__sub-heading {
+  margin-left: 91px;
+} */
+
+.sustainability__bg-img {
+  background-image: url("/images/about_sustainability_img_02_resize.jpeg");
+}
+
+.sustainability__bg-img {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 421px; */
+  /* margin-top: -150px; */
+  opacity: 0.5;
+  width: 100%;
+  height: 421px;
+  margin-bottom: 16px;
+}
+
+.flex-container__sustainability {
+  margin-top: -367px;
+  margin-bottom: 20px;
+}
+
+.flex-item__sustainability {
+  margin-top: -30px;
+  margin-bottom: 31px;
+}
+
+@media screen and (max-width: 950px) {
+  .flex-container {
+    flex-direction: column;
+    position: relative;
+    margin-top: -377px;
+  }
+
+  .flex-container__sustainability {
+    background-color: #6c9ead;
+    /* background-color: #007a77; */
+    margin-top: 10px;
+  }
+
+  .flex-container-item {
+    margin-top: 100px;
+    margin-bottom: -44px;
+  }
+
+  .flex-container__about img,
+  .flex-container__sustainability img {
+    width: 18%;
+    margin-left: 41%;
+  }
+
+  .flex-container__about {
+    margin-top: -276px;
+  }
+  .flex-item__about {
+    margin-bottom: 10px;
+  }
+
+  .flex-item__sustainability {
+    margin-bottom: 16px;
+    margin-top: 10px;
+  }
+
+  .sustainability__bg-img {
+    display: none;
+  }
+}
+
+/* @media screen and (max-width: 950px) {
+  .flex-container {
+    flex-direction: column;
+    position: relative;
+    margin-top: -377px;
+  }
+
+  .flex-container-item {
+    margin-top: 100px;
+    margin-bottom: -44px;
+  }
+} */
+@media screen and (max-width: 600px) {
+  .flex-container__about img,
+  .flex-container__sustainability img {
+    width: 22%;
+  }
+}
+
+/****************sustainability*****************/
+
+/****************travel info*****************/
+.accordion_travel-info {
+  margin-top: -313px;
+}
+
+.accordion_travel-info_style i {
+  font-size: 20px;
+}
+
+/* home page newsletter */
+.newsletter-bg-img {
+  background-image: url("/images/start_booking_now_img_03_resize.jpeg");
+}
+
+.newsletter-bg-img {
+  background-position: center center;
+  background-repeat: inherit;
+  background-size: auto;
+  height: 314px;
+  margin-top: 34px;
+  opacity: 0.5;
+  width: 100%;
+}
+
+/* .newsletter-bg-img {
+    margin: auto;
+    max-width: 1000px;
+    padding-right: 12px;
+    padding-left: 12px;
+    position: relative;
+  } */
+
+.newsletter-main-text {
+  background: rgba(255, 255, 255, 0.5);
+  /* border: 3px solid #f1f1f1; */
+  /* font-weight: bold;
+  left: 74%;
+  max-width: 558px;
+  padding: 9px;
+  position: relative;
+  text-align: center;
+  top: -157px;
+  transform: translate(-50%, -50%);
+  z-index: 2; */
+  /* left: 50%;
+  max-width: 800px;
+  padding: 20px;
+  position: relative;
+  text-align: center;
+  top: -105px;
+  transform: translate(-50%, -50%);
+  z-index: 2; */
+  /* text-align: center; */
+  /* top: -157px; */
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  left: 50%;
+  max-width: 1076px;
+  padding: 17px;
+  position: relative;
+  text-align: center;
+  /* top: -157px; */
+  margin-top: -165px;
+  margin-bottom: 147px;
+}
+
+#newsLetterBar {
+  border-radius: 3px;
+  border: 1px solid #989898;
+  font-size: 18px;
+  height: 40px;
+  /* margin-left: -58px; */
+  padding: 10px 10px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.newsletter-btn {
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  height: 50px;
+  margin-top: 27px;
+  margin-right: 46%;
+  /* vertical-align: bottom; */
+  width: 100%;
+}
+
+.newsletter-btn i {
+  color: #86aa9c;
+}
+.newsletter-radio {
+  margin-left: -233px;
+  margin-top: 10px;
+  font-size: 19px;
+  /* text-align: start; */
+}
+
+.travel-info__book-now {
+  margin-bottom: -302px;
+}
+@media screen and (max-width: 950px) {
+  /* .newsletter-btn {
+    margin-right: -86%;
+    width: 63px;
+  } */
+}
+
+@media screen and (max-width: 600px) {
+  /* .newsletter-btn {
+    margin: 20px 0 0 -12px;
+    width: 100%;
+  } */
+
+  #newsLetterBar {
+    margin-top: 20px;
+    margin-left: -12px;
+    width: 100%;
+  }
+  .newsletter-bg-img {
+    height: 371px;
+  }
+  .newsletter-main-text {
+    margin-top: -185px;
+  }
+
+  .newsletter-radio {
+    margin-left: -16%;
+  }
 }

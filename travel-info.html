@@ -49,13 +49,169 @@
             <a href="travel-info.html" class="top-nav-active">Travel info</a>
           </li>
           <li class="style-nav"><a href="about.html">About us</a></li>
-          <li class="style-nav"><a href="contact.html">Contact</a></li>
+          <!-- <li class="style-nav"><a href="contact.html">Contact</a></li> -->
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <!--jumbotron -->
+      <section>
+        <div class="travel-info-page__main-img"></div>
+      </section>
+      <section>
+        <div class="travel-info-page__text">
+          <h1>Adventure Trails Hikes Guides</h1>
+          <h2>Travel info</h2>
+          <h3>Adventure Trails Hikes Sustainability</h3>
+          <a href="product.html" class="travel-info-page__btn-show-more">
+            Contact us
+          </a>
+        </div>
+      </section>
+      <section class="travel-info__heading accordion_travel-info">
+        <h2>Choose category</h2>
+      </section>
+      <section class="accordion_travel-info_style">
+        <button class="accordion ">
+          <i class="fa-regular fa-circle-question"></i>
+          How do i book a tour?
+        </button>
+        <div class="panel">
+          <p>
+            You can go to the contact page to get in touch, or you can call us
+            on 555 1000.
+          </p>
+        </div>
+
+        <button class="accordion">
+          <i class="fa-solid fa-dollar-sign"></i>
+          Prices
+        </button>
+        <div class="panel">
+          <p>
+            Our tours are most often created with a specific group of people in
+            mind, so our prices vary. Contact us for more information.
+          </p>
+        </div>
+
+        <button class="accordion">
+          <i class="fa-solid fa-suitcase"></i>
+          What do I need to bring?
+        </button>
+        <div class="panel">
+          <p>
+            We encourage hikers to pack sensibly and bring their own appropriate
+            clothing and gear. We are always well-stocked and prepared, just in
+            case you have forgotten something or would rather travel light. Be
+            aware that our package prices do not include extra equipment!
+          </p>
+        </div>
+
+        <button class="accordion">
+          <i class="fa-solid fa-heart-circle-plus"></i>
+          Insurance
+        </button>
+        <div class="panel">
+          <p>
+            We offer a special all-inclusive insurance package which covers all
+            aspects of a tour. Contact us for more information about this.
+          </p>
+        </div>
+        <button class="accordion">
+          <i class="fa-solid fa-wheelchair"></i>
+          Accessibility
+        </button>
+        <div class="panel">
+          <p>
+            We also offer tours for people with disabilities. Contact us for
+            more information.
+          </p>
+        </div>
+      </section>
+      <section>
+        <section>
+          <div class="newsletter-bg-img"></div>
+        </section>
+        <section class="travel-info__book-now">
+          <div class="container">
+            <div class="newsletter-main-text">
+              <h2>Start Booking Now</h2>
+              <div>
+                <input
+                  type="text"
+                  name="newsLetterBar"
+                  id="newsLetterBar"
+                  placeholder="Full name"
+                />
+              </div>
+              <div>
+                <input
+                  type="text"
+                  name="newsLetterBar"
+                  id="newsLetterBar"
+                  placeholder="Email adress"
+                />
+              </div>
+              <div class="newsletter-radio">
+              <input type="radio" id="smallGroup" name="smallGroup" value="smallGroup">
+                <label for="html">Small group</label>
+                <input type="radio" id="largeGroup" name="largeGroup" value="largeGroup">
+                <label for="css">Large group</label>
+            </div>
+              <button class="newsletter-btn"> Next step
+               <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+      </section>
+    </main>
+      <!--footer-->
+      <footer class="footer">
+        <!--  Company logo  -->
+        <section class="container-footer-info">
+          <div class="left-footer-info left-footer-logo">
+            <a href="index.html">
+              <img
+                src="images/adventure_trails_hike_logo_footer.png"
+                alt="Helios Travel logo"
+              />
+            </a>
+          </div>
+          <!-- Footer company info -->
+          <div class="right-footer-container-info">
+            <h2>Adventure Trails Hikes</h2>
+            <div class="right-footer-nav right-footer-nav-style">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="travel-info.html">Travel info</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="short-hikes.html">Short hikes</a></li>
+                <li><a href="long-hikes.html">Long hikes</a></li>
+                <li><a href="camping-hikes.html">Camping hikes</a></li>
+                <!-- <li><a href="contact.html">Contact us</a></li> -->
+              </ul>
+            </div>
+            <!-- Follow us on social media -->
+            <div class="right-footer-social-media">
+              <h2>Follow us on social media</h2>
+              <a href="#"><i class="fab fa-facebook-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-youtube-square"></i></a>
+            </div>
+            <!-- Copyright information -->
+            <div class="right-copyright-info">
+              <h3>
+                &copy; 2022 Adventure Trail Hikes | Designed and coded by Aina
+                Bjerke
+              </h3>
+            </div>
+          </div>
+        </section>
+      </footer>
     <!--js files-->
     <script src="js/hamburgerMenu.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
