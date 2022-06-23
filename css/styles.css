@@ -236,6 +236,12 @@ h6 {
   top: 442px;
   transform: translate(-50%, -50%);
   width: 331px;
+  z-index: 2;
+}
+
+.intro-img-homepage__column img {
+  opacity: 0.5;
+  width: 100%;
 }
 
 .intro-img-homepage__headings h1 {
@@ -244,7 +250,7 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.8rem;
-  color: white;
+  color: #6c7b86;
   z-index: 1;
 
   /* font-weight: bold;
@@ -265,7 +271,7 @@ h6 {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2rem;
-  color: white;
+  color: #6c7b86;
   z-index: 1;
 }
 
@@ -373,19 +379,34 @@ h6 {
   transform: rotateY(180deg);
 }
 
-.homepage-popular-hikes__flip-card-front,
-.homepage-popular-hikes__flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 441px;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  margin-top: -441px;
-}
-
 .homepage-popular-hikes__flip-card-front {
   background-color: #bbb;
   color: black;
+}
+.homepage-popular-hikes__flip-card-front,
+.homepage-popular-hikes__flip-card-back,
+.camping-hikes__flip-card-back {
+  position: absolute;
+  width: 100%;
+  /* height: 441px; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /* margin-top: -441px; */
+}
+
+.homepage-popular-hikes__flip-card-front,
+.homepage-popular-hikes__flip-card-back {
+  margin-top: -441px;
+  height: 441px;
+}
+
+.camping-hikes__flip-card-back {
+  /* position: absolute;
+  width: 100%; */
+  height: 464px;
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
+  margin-top: -463px;
 }
 
 .homepage-popular-hikes__flip-card-back {
@@ -410,8 +431,13 @@ h6 {
   background-color: white;
 }
 
+.homepage-popular-hikes__card img {
+  width: 100%;
+}
+
 .homepage-popular-hikes__container {
-  padding: 0 16px;
+  /* padding: 0 16px; */
+  padding: 0 18px;
 }
 
 .homepage-popular-hikes__container::after,
@@ -438,9 +464,11 @@ h6 {
   width: 92%;
   font-size: 18px;
   border-radius: 3px;
+  text-decoration: none;
 }
 
-.button:hover {
+.button:hover,
+.newsletter-btn:hover {
   /* background-color: #9d5f3e; */
   filter: brightness(115%);
 }
@@ -449,6 +477,11 @@ h6 {
   .homepage-popular-hikes__flip-card-back {
     height: 456px;
     margin-top: -455px;
+  }
+
+  .camping-hikes__flip-card-back {
+    height: 487px;
+    margin-top: -475px;
   }
 }
 
@@ -466,6 +499,11 @@ h6 {
     height: 567px;
     margin-top: -563px;
   }
+
+  .camping-hikes__flip-card-back {
+    height: 487px;
+    margin-top: -475px;
+  }
 }
 
 @media screen and (max-width: 530px) {
@@ -477,6 +515,10 @@ h6 {
   .homepage-popular-hikes {
     padding-top: 36px;
     padding-bottom: 10px;
+  }
+  .camping-hikes__flip-card-back {
+    height: 525px;
+    margin-top: -510px;
   }
 }
 @media screen and (max-width: 380px) {
@@ -592,6 +634,10 @@ h6 {
 .homepage__text p {
   text-align: center;
   color: #ffffff;
+}
+
+.homepage__text p {
+  font-size: 18px;
 }
 
 /*********************************** global footer style ****************************************/
@@ -906,6 +952,13 @@ h6 {
 .sustainability__text p {
   text-align: center;
   color: #707070;
+  font-size: 18px;
+}
+
+.short-hikes__text span,
+.long-hikes__text span,
+.camping-hikes__text span {
+  display: block;
 }
 
 .short-hikes__heading h2,
@@ -929,7 +982,7 @@ h6 {
   border: none;
   text-align: left;
   outline: none;
-  font-size: 15px;
+  font-size: 18px;
   transition: 0.4s;
 }
 
@@ -944,6 +997,10 @@ h6 {
   font-weight: bold;
   float: right;
   margin-left: 5px;
+}
+
+.panel p {
+  font-size: 16px;
 }
 
 .active:after {
@@ -1261,7 +1318,7 @@ h6 {
   z-index: 2;
   left: 50%;
   max-width: 1076px;
-  padding: 17px;
+  padding: 21px;
   position: relative;
   text-align: center;
   /* top: -157px; */
@@ -1279,6 +1336,7 @@ h6 {
   position: relative;
   width: 100%;
   margin-bottom: 15px;
+  opacity: 0.9;
 }
 
 .newsletter-btn {
@@ -1291,10 +1349,13 @@ h6 {
   margin-right: 46%;
   /* vertical-align: bottom; */
   width: 100%;
+  background-color: #007a77;
+  color: #ffffff;
 }
 
 .newsletter-btn i {
-  color: #86aa9c;
+  color: #ffffff;
+  /* background-color: #007a77; */
 }
 .newsletter-radio {
   margin-left: -233px;
