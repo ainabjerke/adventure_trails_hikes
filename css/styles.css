@@ -297,11 +297,9 @@ h6 {
 }
 
 @media screen and (max-width: 360px) {
-  .intro-img-homepage__headings h1 {
-    font-size: 15px;
-  }
+  .intro-img-homepage__headings h1,
   .intro-img-homepage__headings h2 {
-    top: 315px;
+    display: none;
   }
 }
 
