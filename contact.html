@@ -52,13 +52,138 @@
             <a href="about.html">About us</a>
           </li>
           <li class="style-nav">
-            <a href="contact.html" class="top-nav-active">Contact</a>
+            <a href="contact.html" class="top-nav-active">Contact us</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <!-- Message us -->
+      <section class="message-us-contact-us-form-box">
+        <div class="message-us-contact-us-info">
+          <img
+            src="images/contact_us_image.JPG"
+            alt="illustration of a friendly smiling customer service employee"
+          />
+          <h1>Contact us</h1>
+        </div>
+        <div id="message"></div>
+        <!-- Message us form field -->
+        <div class="message-us-form">
+          <form id="contactForm">
+            <label for="fullName">
+              <i class="fas fa-user-alt"></i>
+              Full Name
+
+              <input
+                type="text"
+                id="fullName"
+                name="fullName"
+                placeholder="Aina Bjerke"
+              />
+            </label>
+
+            <label for="email">
+              <i class="fas fa-envelope"></i>
+              E-mail
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="aina@example.com"
+              />
+            </label>
+
+            <label for="phone">
+              <i class="fas fa-phone-alt"></i>
+              Phone number
+
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Your phone number.."
+              />
+            </label>
+
+            <label for="inquiry">
+              <i class="far fa-closed-captioning"></i>
+              Select inquiry
+            </label>
+            <select id="inquiry" name="inquiry">
+              <option value="guidedTours">
+                Arrange guided singel and group tour
+              </option>
+              <option value="studentVisit">Arrange student visit</option>
+              <option value="holidayClub">Join holiday club</option>
+              <option value="collectionDepartment">Item to donate</option>
+              <option value="volunteer">Volunteer</option>
+              <option value="internships">Internships</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="textArea">
+              <i class="far fa-edit"></i>
+              Message
+
+              <textarea
+                id="textArea"
+                name="textArea"
+                placeholder="Write something.."
+              ></textarea>
+            </label>
+
+            <button class="sign_in_button btn">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--footer-->
+    <footer class="footer">
+      <!--  Company logo  -->
+      <section class="container-footer-info">
+        <div class="left-footer-info left-footer-logo">
+          <a href="index.html">
+            <img
+              src="images/adventure_trails_hike_logo_footer.png"
+              alt="Adventure Trail Hikes logo"
+            />
+          </a>
+        </div>
+        <!-- Footer company info -->
+        <div class="right-footer-container-info">
+          <h2>Adventure Trails Hikes</h2>
+          <div class="right-footer-nav right-footer-nav-style">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="travel-info.html">Travel info</a></li>
+              <li><a href="about.html">About us</a></li>
+              <li><a href="short-hikes.html">Short hikes</a></li>
+              <li><a href="long-hikes.html">Long hikes</a></li>
+              <li><a href="camping-hikes.html">Camping hikes</a></li>
+              <li><a href="contact.html">Contact us</a></li>
+            </ul>
+          </div>
+          <!-- Follow us on social media -->
+          <div class="right-footer-social-media">
+            <h2>Follow us on social media</h2>
+            <a href="#"><i class="fab fa-facebook-square"></i></a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+            <a href="#"><i class="fab fa-twitter-square"></i></a>
+            <a href="#"><i class="fab fa-youtube-square"></i></a>
+          </div>
+          <!-- Copyright information -->
+          <div class="right-copyright-info">
+            <h3>
+              &copy; 2022 Adventure Trail Hikes | Designed and coded by Aina
+              Bjerke
+            </h3>
+          </div>
+        </div>
+      </section>
+    </footer>
     <!--js files-->
     <script src="js/hamburgerMenu.js"></script>
   </body>

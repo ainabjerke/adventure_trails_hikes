@@ -1267,3 +1267,57 @@ h6 {
     margin-top: -185px;
   }
 }
+
+/*************************** contact us page style *********************/
+
+.message-us-contact-us-form-box {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  color: #2d3059;
+  margin-bottom: 16px;
+  margin-top: 23px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="emailFooter"],
+input[type="emailAdress"],
+select,
+textarea,
+option {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 17px;
+  line-height: 20px;
+  color: #2d3059;
+}
+
+textarea {
+  height: 200px;
+}
+
+/* label {
+  margin-bottom: 10px;
+  display: block;
+} */
+
+.btn {
+  background-color: #ffcf01;
+  color: #1b1464;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  filter: brightness(130%);
+}
