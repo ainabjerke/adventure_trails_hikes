@@ -296,6 +296,15 @@ h6 {
   }
 }
 
+@media screen and (max-width: 360px) {
+  .intro-img-homepage__headings h1 {
+    font-size: 15px;
+  }
+  .intro-img-homepage__headings h2 {
+    top: 315px;
+  }
+}
+
 /*************************homepage popular hikes style *******************/
 
 .homepage-popular-hikes__heading h2 {
@@ -1130,11 +1139,11 @@ h6 {
 }
 
 /* home page newsletter */
-.newsletter-bg-img {
+.book-now-bg-img {
   background-image: url("/images/start_booking_now_img_03_resize.jpeg");
 }
 
-.newsletter-bg-img {
+.book-now-bg-img {
   background-position: center center;
   background-repeat: inherit;
   background-size: auto;
@@ -1144,7 +1153,7 @@ h6 {
   width: 100%;
 }
 
-.newsletter-main-text {
+.book-now-main-text {
   background: rgba(255, 255, 255, 0.5);
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -1170,7 +1179,7 @@ h6 {
   opacity: 0.9;
 }
 
-.newsletter-btn {
+.book-now-btn {
   border: none;
   border-radius: 3px;
   cursor: pointer;
@@ -1183,7 +1192,7 @@ h6 {
   color: #ffffff;
 }
 
-.newsletter-btn i {
+.book-now-btn i {
   color: #ffffff;
 }
 
@@ -1191,7 +1200,7 @@ h6 {
   margin-bottom: -302px;
 }
 
-.newsletter-radio {
+.book-now-radio {
   font-size: 20px;
   text-align: left;
   color: #5c5c5c;
@@ -1218,15 +1227,16 @@ h6 {
 }
 
 @media screen and (max-width: 600px) {
-  #newsLetterBar {
+  #fname,
+  #email {
     margin-top: 20px;
     margin-left: -12px;
     width: 100%;
   }
-  .newsletter-bg-img {
+  .book-now-bg-img {
     height: 371px;
   }
-  .newsletter-main-text {
+  .book-now-main-text {
     margin-top: -185px;
   }
 }
