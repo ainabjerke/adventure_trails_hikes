@@ -848,7 +848,8 @@ h6 {
   .about-page__text,
   .travel-info-page__text {
     left: 57%;
-    margin-top: -8px;
+    margin-top: -30px;
+    margin-bottom: 47px;
   }
 
   .short-hike-page__main-img,
@@ -860,6 +861,18 @@ h6 {
 
   .travel-info-page__main-img {
     margin-top: -88px;
+  }
+  .short-hike-page__text h1,
+  .short-hike-page__text h3,
+  .long-hike-page__text h1,
+  .long-hike-page__text h3,
+  .camping-hike-page__text h1,
+  .camping-hike-page__text h3,
+  .travel-info-page__text h1,
+  .travel-info-page__text h3,
+  .about-page__text h1,
+  .about-page__text h3 {
+    display: none;
   }
 }
 
