@@ -1,4 +1,3 @@
-/* Global style */
 * {
   box-sizing: border-box;
 }
@@ -40,7 +39,6 @@ h6 {
   box-shadow: 0 1px 0 0 #d3d0c5;
   display: flex;
   justify-content: end;
-  /* margin: 0px 52px 0px 51px; */
   margin: 0px 11px 0px 0px;
   overflow: hidden;
   padding: 10px 0px 10px 0px;
@@ -83,14 +81,6 @@ h6 {
 }
 
 .dropdown .dropbtn {
-  /* font-size: 17px;
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0; */
   background-color: inherit;
   border: none;
   outline: none;
@@ -125,15 +115,12 @@ h6 {
 .dropdown:hover .dropbtn {
   background-color: white;
   color: #6c9ead;
-  /* border-bottom: #28235d solid;
-  border-bottom-width: 3px; */
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
   border-bottom: #6c9ead solid;
   border-bottom-width: 3px;
-  /* color: black; */
 }
 
 .dropdown:hover .dropdown-content {
@@ -252,17 +239,6 @@ h6 {
   font-size: 2.8rem;
   color: #6c7b86;
   z-index: 1;
-
-  /* font-weight: bold;
-  left: 50%;
-  max-width: 800px;
-  position: relative;
-  text-align: center;
-  top: 729px;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  font-size: 3.5rem;
-  color: white; */
 }
 
 .intro-img-homepage__headings h2 {
@@ -322,32 +298,29 @@ h6 {
 
 /*************************homepage popular hikes style *******************/
 
-/* .homepage-popular-hikes h2 {
-  text-align: center;
-  font-size: 43px;
-  color: white;
-} */
-
 .homepage-popular-hikes__heading h2 {
   text-align: center;
   font-size: 43px;
   color: #6c9ead;
 }
+
 .homepage-popular-hikes {
   background-color: #c7d1ce;
   margin-left: 4px;
   margin-right: 4px;
 }
+
 .homepage-popular-hikes__container h2 {
   font-size: 22px;
 }
+
 .homepage-popular-hikes__column {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
-  /* padding: 0 8px; */
   padding: 16px 5px 1px 8px;
 }
+
 .homepage-popular-hikes__container i {
   color: #6c9ead;
   font-size: 26px;
@@ -359,8 +332,6 @@ h6 {
 
 .homepage-popular-hikes__flip-card {
   background-color: transparent;
-  /* width: 300px;
-  height: 300px; */
   perspective: 1000px;
 }
 
@@ -368,7 +339,6 @@ h6 {
   position: relative;
   width: 100%;
   height: 100%;
-  /* text-align: center; */
   transition: transform 0.6s;
   transform-style: preserve-3d;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -383,15 +353,14 @@ h6 {
   background-color: #bbb;
   color: black;
 }
+
 .homepage-popular-hikes__flip-card-front,
 .homepage-popular-hikes__flip-card-back,
 .camping-hikes__flip-card-back {
   position: absolute;
   width: 100%;
-  /* height: 441px; */
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* margin-top: -441px; */
 }
 
 .homepage-popular-hikes__flip-card-front,
@@ -401,11 +370,7 @@ h6 {
 }
 
 .camping-hikes__flip-card-back {
-  /* position: absolute;
-  width: 100%; */
   height: 464px;
-  /* -webkit-backface-visibility: hidden;
-  backface-visibility: hidden; */
   margin-top: -463px;
 }
 
@@ -436,7 +401,6 @@ h6 {
 }
 
 .homepage-popular-hikes__container {
-  /* padding: 0 16px; */
   padding: 0 18px;
 }
 
@@ -469,7 +433,6 @@ h6 {
 
 .button:hover,
 .newsletter-btn:hover {
-  /* background-color: #9d5f3e; */
   filter: brightness(115%);
 }
 
@@ -493,56 +456,7 @@ h6 {
     margin-bottom: 14px;
   }
 }
-/* @media screen and (max-width: 940px) {
-  .homepage-popular-hikes__flip-card-back {
-    height: 456px;
-    margin-top: -455px;
-  }
 
-  .camping-hikes__flip-card-back {
-    height: 487px;
-    margin-top: -475px;
-  }
-} */
-/* 
-@media screen and (max-width: 650px) {
-  .homepage-popular-hikes__column {
-    width: 100%;
-    display: block;
-  }
-
-  .homepage-popular-hikes__flip-card-back {
-    height: 567px;
-    margin-top: -563px;
-  }
-
-  .camping-hikes__flip-card-back {
-    height: 487px;
-    margin-top: -475px;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .homepage-popular-hikes__flip-card-back {
-    height: 478px;
-    margin-top: -475px;
-  }
-
-  .homepage-popular-hikes {
-    padding-top: 36px;
-    padding-bottom: 10px;
-  }
-  .camping-hikes__flip-card-back {
-    height: 525px;
-    margin-top: -510px;
-  }
-}
-@media screen and (max-width: 380px) {
-  .homepage-popular-hikes__flip-card-back {
-    height: 456px;
-    margin-top: -456px;
-  }
-} */
 /************* our hikes cta*************/
 .homepage-our-hikes__flex-container {
   display: flex;
@@ -551,7 +465,6 @@ h6 {
   justify-content: space-between;
   margin-left: 0px;
   padding: 18px 14px;
-  /* width: 100%; */
   background-color: #e1dfdb;
   margin-top: 19px;
   margin-left: 4px;
@@ -603,7 +516,6 @@ h6 {
   background-size: contain;
   height: 187px;
   margin-top: 34px;
-  /* opacity: 0.3; */
   width: 100%;
 }
 
@@ -670,7 +582,6 @@ h6 {
 }
 
 .left-footer-info {
-  /* margin: 0px 0px 4px 54px; */
   margin: 0px 0px 4px 4px;
   padding: 9.7px;
 }
@@ -684,7 +595,6 @@ h6 {
 
 .right-footer-container-info {
   flex: 50%;
-  /* margin: 0px 54px 4px 3px; */
   margin: 0px 4px 4px 3px;
   padding: 10px;
 }
@@ -692,6 +602,7 @@ h6 {
 .right-footer-container-info h2 {
   color: #ffffff;
 }
+
 .right-footer-nav ul {
   column-count: 3;
   list-style-type: none;
@@ -804,7 +715,6 @@ h6 {
 }
 
 .short-hike-page__main-img,
-/* .long-hike-page__main-img, */
 .camping-hike-page__main-img,
 .about-page__main-img,
 .travel-info-page__main-img {
@@ -819,8 +729,6 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  /* height: 421px; */
-  /* margin-top: -150px; */
   opacity: 0.5;
   width: 100%;
 }
@@ -866,14 +774,6 @@ h6 {
 .travel-info-page__btn-show-more {
   background-color: #9d5f3e;
 }
-
-/* .product-page-btn__show-more {
-  background-color: #004c42;
-}
-
-.long-hike-page__btn-show-more {
-  background-color: #007a77;
-} */
 
 .short-hike-page__btn-show-more,
 .long-hike-page__btn-show-more,
@@ -955,11 +855,8 @@ h6 {
 .long-hikes__info,
 .camping-hikes__info,
 .sustainability__info {
-  /* margin-top: -236px; */
   background-color: #e1dfdb;
   padding: 24px;
-  /* margin-right: 4px;
-  margin-left: 4px; */
 }
 
 .short-hikes__text p,
@@ -985,7 +882,6 @@ h6 {
   text-align: center;
   font-size: 43px;
   color: #6c9ead;
-  /* margin-top: -246px; */
 }
 
 /************short hike info accodrion**************/
@@ -1053,28 +949,28 @@ h6 {
   color: #6c9ead;
   border: 2px solid #707070;
 }
+
 .our_guide_btn {
   width: 100%;
   padding: 16px;
   margin-top: 30px;
   margin-bottom: 10px;
-  /* margin-left: 10px; */
   font-size: 1.5em;
 }
+
 .our_guide_btn:hover {
   filter: brightness(115%);
   text-decoration: underline;
 }
+
 @media screen and (max-width: 800px) {
   .our_guide_btn {
     top: -17px;
     position: relative;
-    /* width: 97.4%; */
   }
 }
 @media screen and (max-width: 500px) {
   .our_guide_btn {
-    /* width: 95.9%; */
     margin-top: 34px;
   }
 }
@@ -1083,10 +979,8 @@ h6 {
 .flex-container {
   display: flex;
   flex-direction: row;
-  /* font-size: 30px; */
   text-align: center;
   margin-top: -240px;
-  /* background-color: #c7d1ce; */
 }
 
 .flex-container__about {
@@ -1113,16 +1007,6 @@ h6 {
   font-size: 20px;
 }
 
-/* .flex-container-item a {
-  text-decoration: none;
-}
-
-.flex-container-item a:hover {
-  text-decoration: none;
-  filter: brightness(90%);
-  color: #707070;
-} */
-
 .flex-container__about img {
   width: 52%;
   border-radius: 50%;
@@ -1135,13 +1019,10 @@ h6 {
 
 .sustainability__bg-img {
   width: 52%;
-  /* border-radius: 50%; */
   height: 36px;
   display: block;
-  /* margin-left: 73px; */
   margin-top: 59px;
   margin-top: 10px;
-  /* margin-bottom: 30px; */
 }
 
 .flex-container__sustainability i {
@@ -1150,43 +1031,20 @@ h6 {
   margin-top: 18px;
 }
 
-/* .flex-container-customer-reviews {
-  margin-top: 59px;
-} */
-
 .flex-item {
   padding: 18px;
   flex: 50%;
   text-align: center;
-  /* margin-right: 1px; */
   background-color: #ffffff;
   opacity: 0.7;
   color: #707070;
   margin: 11px;
-  /* background-color: #c7d1ce; */
 }
 
 .flex-item h2 {
   font-size: 20px;
   color: #707070;
 }
-
-/* .flex-item h3 {
-  font-size: 14px;
-}
-
-.flex-item h4 {
-  font-size: 12px;
-} */
-
-/* .flex-container-customer-reviews__main-heading {
-  margin-top: -55px;
-  margin-left: 91px;
-}
-
-.flex-container-customer-reviews__sub-heading {
-  margin-left: 91px;
-} */
 
 .sustainability__bg-img {
   background-image: url("/images/about_sustainability_img_02_resize.jpeg");
@@ -1196,8 +1054,6 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  /* height: 421px; */
-  /* margin-top: -150px; */
   opacity: 0.5;
   width: 100%;
   height: 421px;
@@ -1223,7 +1079,6 @@ h6 {
 
   .flex-container__sustainability {
     background-color: #6c9ead;
-    /* background-color: #007a77; */
     margin-top: 10px;
   }
 
@@ -1241,6 +1096,7 @@ h6 {
   .flex-container__about {
     margin-top: -276px;
   }
+
   .flex-item__about {
     margin-bottom: 10px;
   }
@@ -1255,18 +1111,6 @@ h6 {
   }
 }
 
-/* @media screen and (max-width: 950px) {
-  .flex-container {
-    flex-direction: column;
-    position: relative;
-    margin-top: -377px;
-  }
-
-  .flex-container-item {
-    margin-top: 100px;
-    margin-bottom: -44px;
-  }
-} */
 @media screen and (max-width: 600px) {
   .flex-container__about img,
   .flex-container__sustainability img {
@@ -1300,36 +1144,8 @@ h6 {
   width: 100%;
 }
 
-/* .newsletter-bg-img {
-    margin: auto;
-    max-width: 1000px;
-    padding-right: 12px;
-    padding-left: 12px;
-    position: relative;
-  } */
-
 .newsletter-main-text {
   background: rgba(255, 255, 255, 0.5);
-  /* border: 3px solid #f1f1f1; */
-  /* font-weight: bold;
-  left: 74%;
-  max-width: 558px;
-  padding: 9px;
-  position: relative;
-  text-align: center;
-  top: -157px;
-  transform: translate(-50%, -50%);
-  z-index: 2; */
-  /* left: 50%;
-  max-width: 800px;
-  padding: 20px;
-  position: relative;
-  text-align: center;
-  top: -105px;
-  transform: translate(-50%, -50%);
-  z-index: 2; */
-  /* text-align: center; */
-  /* top: -157px; */
   transform: translate(-50%, -50%);
   z-index: 2;
   left: 50%;
@@ -1337,17 +1153,16 @@ h6 {
   padding: 21px;
   position: relative;
   text-align: center;
-  /* top: -157px; */
   margin-top: -165px;
   margin-bottom: 147px;
 }
 
-#newsLetterBar {
+#fname,
+#email {
   border-radius: 3px;
   border: 1px solid #989898;
   font-size: 18px;
   height: 40px;
-  /* margin-left: -58px; */
   padding: 10px 10px;
   position: relative;
   width: 100%;
@@ -1363,7 +1178,6 @@ h6 {
   height: 50px;
   margin-top: 27px;
   margin-right: 46%;
-  /* vertical-align: bottom; */
   width: 100%;
   background-color: #007a77;
   color: #ffffff;
@@ -1371,14 +1185,7 @@ h6 {
 
 .newsletter-btn i {
   color: #ffffff;
-  /* background-color: #007a77; */
 }
-/* .newsletter-radio {
-  margin-left: -233px;
-  margin-top: 10px;
-  font-size: 19px;
-  text-align: start; 
-}  */
 
 .travel-info__book-now {
   margin-bottom: -302px;
@@ -1410,61 +1217,7 @@ h6 {
   cursor: pointer;
 }
 
-/* Create a custom radio button */
-/* .checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-} */
-
-/* On mouse-over, add a grey background color */
-/* .container-radio:hover input ~ .checkmark {
-  background-color: #ccc;
-} */
-
-/* When the radio button is checked, add a blue background */
-/* .container-radio input:checked ~ .checkmark {
-  background-color: #2196f3;
-} */
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-/* .checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-} */
-
-/* Show the indicator (dot/circle) when checked */
-/* .container-radio input:checked ~ .checkmark:after {
-  display: block;
-} */
-
-/* Style the indicator (dot/circle) */
-/* .container-radio .checkmark:after {
-  top: 9px;
-  left: 9px;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: white;
-} */
-@media screen and (max-width: 950px) {
-  /* .newsletter-btn {
-    margin-right: -86%;
-    width: 63px;
-  } */
-}
-
 @media screen and (max-width: 600px) {
-  /* .newsletter-btn {
-    margin: 20px 0 0 -12px;
-    width: 100%;
-  } */
-
   #newsLetterBar {
     margin-top: 20px;
     margin-left: -12px;
@@ -1476,8 +1229,4 @@ h6 {
   .newsletter-main-text {
     margin-top: -185px;
   }
-
-  /* .newsletter-radio {
-    margin-left: -16%;
-  } */
 }
