@@ -1271,7 +1271,7 @@ h6 {
 /*************************** contact us page style *********************/
 
 .message-us-contact-us-form-box {
-  background-color: #f2f2f2;
+  background-color: #c7d1ce;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
@@ -1307,8 +1307,8 @@ textarea {
 } */
 
 .btn {
-  background-color: #ffcf01;
-  color: #1b1464;
+  background-color: #007a77;
+  color: #ffffff;
   padding: 12px;
   margin: 10px 0;
   border: none;
