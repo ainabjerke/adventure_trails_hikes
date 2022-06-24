@@ -473,7 +473,27 @@ h6 {
   filter: brightness(115%);
 }
 
-@media screen and (max-width: 940px) {
+.homepage-popular-hikes__container a {
+  display: none;
+}
+
+@media screen and (max-width: 810px) {
+  .homepage-popular-hikes__column {
+    width: 100%;
+    display: block;
+  }
+  .homepage-popular-hikes__flip-card:hover
+    .homepage-popular-hikes__flip-card-inner {
+    transform: none;
+  }
+
+  .homepage-popular-hikes__container a {
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+}
+/* @media screen and (max-width: 940px) {
   .homepage-popular-hikes__flip-card-back {
     height: 456px;
     margin-top: -455px;
@@ -483,8 +503,8 @@ h6 {
     height: 487px;
     margin-top: -475px;
   }
-}
-
+} */
+/* 
 @media screen and (max-width: 650px) {
   .homepage-popular-hikes__column {
     width: 100%;
@@ -492,10 +512,6 @@ h6 {
   }
 
   .homepage-popular-hikes__flip-card-back {
-    /* height: 554px;
-    margin-top: -542px; */
-    /* height: 561px;
-    margin-top: -556px; */
     height: 567px;
     margin-top: -563px;
   }
@@ -526,7 +542,7 @@ h6 {
     height: 456px;
     margin-top: -456px;
   }
-}
+} */
 /************* our hikes cta*************/
 .homepage-our-hikes__flex-container {
   display: flex;
