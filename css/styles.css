@@ -299,7 +299,10 @@ h6 {
 @media screen and (max-width: 360px) {
   .intro-img-homepage__headings h1,
   .intro-img-homepage__headings h2 {
-    display: none;
+    font-size: 15px;
+  }
+  .intro-img-homepage__headings h2 {
+    top: 315px;
   }
 }
 
@@ -756,6 +759,19 @@ h6 {
 .travel-info-page__text h2,
 .travel-info-page__text h3 {
   color: #004c42;
+}
+
+.short-hike-page__text h1,
+.short-hike-page__text h3,
+.long-hike-page__text h1,
+.long-hike-page__text h3,
+.camping-hike-page__text h1,
+.camping-hike-page__text h3,
+.travel-info-page__text h1,
+.travel-info-page__text h3,
+.about-page__text h1,
+.about-page__text h3 {
+  font-size: 16px;
 }
 
 .short-hike-page__text,
