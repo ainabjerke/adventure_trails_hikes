@@ -614,7 +614,7 @@ h6 {
 }
 
 .right-footer-nav ul {
-  column-count: 3;
+  column-count: 4;
   list-style-type: none;
   margin: 0px 60px 37px 0px;
   position: relative;
@@ -945,6 +945,10 @@ h6 {
   font-weight: bold;
   float: right;
   margin-left: 5px;
+}
+
+.accordion_contact-info a {
+  color: #007a77;
 }
 
 .panel p {
