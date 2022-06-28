@@ -1111,7 +1111,8 @@ main {
 }
 
 .flex-item {
-  padding: 18px;
+  /* padding: 18px; */
+  padding: 5px;
   flex: 50%;
   text-align: center;
   background-color: #ffffff;
