@@ -65,11 +65,6 @@ h6 {
   overflow: hidden;
 }
 
-.style-nav:hover {
-  border-bottom: #6c9ead solid;
-  border-bottom-width: 3px;
-}
-
 .topnav a.top-nav-active {
   border-bottom: #6c9ead solid;
   border-bottom-width: 3px;
@@ -129,7 +124,6 @@ h6 {
 /*************** tablet nav style ******************/
 
 @media screen and (max-width: 980px) {
-  .topnav a:not(:first-child),
   .style-nav {
     display: none;
   }
@@ -175,6 +169,7 @@ h6 {
   .topnav {
     display: block;
     margin: 0px 20px 0px 20px;
+    float: none;
   }
 
   .topnav.responsive .dropdown {
@@ -188,12 +183,11 @@ h6 {
     display: block;
     text-align: center;
   }
-  .topnav .dropdown {
-    float: none;
-  }
+
   .topnav .dropdown-content {
     position: relative;
   }
+
   .topnav .dropdown .dropbtn {
     display: block;
     width: 100%;
@@ -231,24 +225,27 @@ h6 {
   width: 100%;
 }
 
-.intro-img-homepage__headings h1 {
+main {
+  position: relative;
+}
+
+.intro-img-homepage__headings h1,
+.intro-img-homepage__headings h2 {
   position: absolute;
-  top: 500px;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 2.8rem;
-  color: #6c7b86;
   z-index: 1;
+  color: #6c7b86;
+}
+
+.intro-img-homepage__headings h1 {
+  top: 500px;
+  font-size: 2.8rem;
 }
 
 .intro-img-homepage__headings h2 {
-  position: absolute;
   top: 564px;
-  left: 50%;
-  transform: translate(-50%, -50%);
   font-size: 2rem;
-  color: #6c7b86;
-  z-index: 1;
 }
 
 .intro-img-homepage__column {
@@ -285,53 +282,49 @@ h6 {
     top: 266px;
     width: 175px;
   }
+
   .intro-img-homepage__headings h1 {
     top: 295px;
-    font-size: 17px;
+    font-size: 1em;
+    padding: 0px;
   }
 
   .intro-img-homepage__headings h2 {
     top: 323px;
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  .intro-img-homepage__headings h1,
-  .intro-img-homepage__headings h2 {
-    font-size: 15px;
-  }
-  .intro-img-homepage__headings h2 {
-    top: 315px;
+    font-size: 0.8em;
   }
 }
 
 /*************************homepage popular hikes style *******************/
 
-.homepage-popular-hikes__heading h2 {
-  text-align: center;
-  font-size: 43px;
-  color: #6c9ead;
-}
-
-.homepage-popular-hikes {
+.homepage-popular-hikes,
+.short-hikes-flipCard,
+.long-hikes-flipCard,
+.camping-hikes-flipCard {
   background-color: #c7d1ce;
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
-.homepage-popular-hikes__container h2 {
+.homepage-popular-hikes__container h2,
+.short-hikes-flipCard__container h2,
+.long-hikes-flipCard__container h2,
+.camping-hikes-flipCard__container h2 {
   font-size: 22px;
 }
 
-.homepage-popular-hikes__column {
+.homepage-popular-hikes__column,
+.short-hikes-flipCard__column,
+.long-hikes-flipCard__column,
+.camping-hikes-flipCard__column {
   float: left;
   width: 33.3%;
   margin-bottom: 16px;
   padding: 16px 5px 1px 8px;
 }
 
-.homepage-popular-hikes__container i {
+.homepage-popular-hikes__container i,
+.short-hikes-flipCard__container i,
+.long-hikes-flipCard__container i,
+.camping-hikes-flipCard__container i {
   color: #6c9ead;
   font-size: 26px;
   margin-right: 14px;
@@ -340,12 +333,18 @@ h6 {
 
 /********flip card************/
 
-.homepage-popular-hikes__flip-card {
+.homepage-popular-hikes__flip-card,
+.short-hikes-product__flip-card,
+.long-hikes-product__flip-card,
+.camping-hikes-product__flip-card {
   background-color: transparent;
   perspective: 1000px;
 }
 
-.homepage-popular-hikes__flip-card-inner {
+.homepage-popular-hikes__flip-card-inner,
+.short-hikes-product__flip-card-inner,
+.long-hikes-product__flip-card-inner,
+.camping-hikes-product__flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -355,67 +354,93 @@ h6 {
 }
 
 .homepage-popular-hikes__flip-card:hover
-  .homepage-popular-hikes__flip-card-inner {
+  .homepage-popular-hikes__flip-card-inner,
+.short-hikes-product__flip-card:hover .short-hikes-product__flip-card-inner,
+.long-hikes-product__flip-card:hover .long-hikes-product__flip-card-inner,
+.camping-hikes-product__flip-card:hover
+  .camping-hikes-product__flip-card-inner {
   transform: rotateY(180deg);
 }
 
-.homepage-popular-hikes__flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.homepage-popular-hikes__flip-card-front,
 .homepage-popular-hikes__flip-card-back,
-.camping-hikes__flip-card-back {
+.short-hikes-flipCard__flip-card-back,
+.long-hikes-flipCard__flip-card-back,
+.camping-hikes-flipCard__flip-card-back {
   position: absolute;
   width: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
-.homepage-popular-hikes__flip-card-front,
-.homepage-popular-hikes__flip-card-back {
-  margin-top: -441px;
-  height: 441px;
+.homepage-popular-hikes__flip-card-back,
+.short-hikes-flipCard__flip-card-back,
+.long-hikes-flipCard__flip-card-back {
+  margin-top: -443px;
+  height: 443px;
 }
 
-.camping-hikes__flip-card-back {
+.camping-hikes-flipCard__flip-card-back {
   height: 464px;
   margin-top: -463px;
 }
 
-.homepage-popular-hikes__flip-card-back {
+.homepage-popular-hikes__flip-card-back,
+.short-hikes-flipCard__flip-card-back,
+.long-hikes-flipCard__flip-card-back,
+.camping-hikes-flipCard__flip-card-back {
   background-color: #e1dfdb;
   color: white;
   transform: rotateY(180deg);
   text-align: center;
 }
 
-.homepage-popular-hikes__flip-card-back h2 {
+.homepage-popular-hikes__flip-card-back h2,
+.short-hikes-flipCard__flip-card-back h2,
+.long-hikes-flipCard__flip-card-back h2,
+.camping-hikes-flipCard__flip-card-back h2 {
   font-size: 20px;
   color: #004c42;
   margin-top: 100px;
 }
 
-.homepage-popular-hikes__flip-card-back p {
+.homepage-popular-hikes__flip-card-back p,
+.short-hikes-flipCard__flip-card-back p,
+.long-hikes-flipCard__flip-card-back p,
+.camping-hikes-flipCard__flip-card-back p {
   font-size: 32px;
   color: #007a77;
 }
-.homepage-popular-hikes__card {
+
+.homepage-popular-hikes__card,
+.short-hikes-flipCard__card,
+.long-hikes-flipCard__card,
+.camping-hikes-flipCard__card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: white;
 }
 
-.homepage-popular-hikes__card img {
+.homepage-popular-hikes__card img,
+.short-hikes-flipCard__card img,
+.long-hikes-flipCard__card img,
+.camping-hikes-flipCard__card img {
   width: 100%;
 }
 
-.homepage-popular-hikes__container {
+.homepage-popular-hikes__container,
+.short-hikes-flipCard__container,
+.long-hikes-flipCard__container,
+.camping-hikes-flipCard__container {
   padding: 0 18px;
 }
 
 .homepage-popular-hikes__container::after,
-.homepage-popular-hikes__row::after {
+.homepage-popular-hikes__row::after,
+.short-hikes-flipCard__container::after,
+.short-hikes-flipCard__row::after,
+.long-hikes-flipCard__container::after,
+.long-hikes-flipCard__row::after,
+.camping-hikes-flipCard__container::after,
+.camping-hikes-flipCard__row::after {
   content: "";
   clear: both;
   display: table;
@@ -441,29 +466,60 @@ h6 {
   text-decoration: none;
 }
 
-.button:hover,
-.newsletter-btn:hover {
-  filter: brightness(115%);
-}
-
-.homepage-popular-hikes__container a {
+.homepage-popular-hikes__container a,
+.short-hikes-flipCard__container a,
+.long-hikes-flipCard__container a,
+.camping-hikes-flipCard__container a,
+.homepage-popular-hikes__container-price,
+.short-hikes-flipCard__container-price,
+.long-hikes-flipCard__container-price,
+.camping-hikes-flipCard__container-price {
   display: none;
 }
 
 @media screen and (max-width: 810px) {
-  .homepage-popular-hikes__column {
+  .homepage-popular-hikes__column,
+  .short-hikes-flipCard__column,
+  .long-hikes-flipCard__column,
+  .camping-hikes-flipCard__column {
     width: 100%;
     display: block;
   }
   .homepage-popular-hikes__flip-card:hover
-    .homepage-popular-hikes__flip-card-inner {
+    .homepage-popular-hikes__flip-card-inner,
+  .short-hikes-product__flip-card:hover .short-hikes-product__flip-card-inner,
+  .long-hikes-product__flip-card:hover .long-hikes-product__flip-card-inner,
+  .camping-hikes-product__flip-card:hover
+    .camping-hikes-product__flip-card-inner {
     transform: none;
   }
 
-  .homepage-popular-hikes__container a {
+  .homepage-popular-hikes__container a,
+  .short-hikes-flipCard__container a,
+  .long-hikes-flipCard__container a,
+  .camping-hikes-flipCard__container a {
     display: block;
     width: 100%;
     margin-bottom: 14px;
+  }
+
+  .homepage-popular-hikes__container-price,
+  .short-hikes-flipCard__container-price,
+  .long-hikes-flipCard__container-price,
+  .camping-hikes-flipCard__container-price {
+    display: block;
+    color: grey;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: -3px;
+  }
+
+  .homepage-popular-hikes__container-price span,
+  .short-hikes-flipCard__container-price span,
+  .long-hikes-flipCard__container-price span,
+  .camping-hikes-flipCard__container-price span {
+    color: #007a77;
+    font-size: 22px;
   }
 }
 
@@ -477,8 +533,6 @@ h6 {
   padding: 18px 14px;
   background-color: #e1dfdb;
   margin-top: 19px;
-  margin-left: 4px;
-  margin-right: 4px;
 }
 
 .homepage-our-hikes__flex-container a {
@@ -524,9 +578,9 @@ h6 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  height: 187px;
-  margin-top: 34px;
   width: 100%;
+  height: 188px;
+  margin-top: 34px;
 }
 
 .homepage__sustainable-cta h2 {
@@ -540,10 +594,6 @@ h6 {
   text-decoration: none;
 }
 
-.homepage__sustainable-cta a:hover {
-  filter: brightness(115%);
-}
-
 @media screen and (max-width: 730px) {
   .homepage__sustainable-cta h2 {
     font-size: 20px;
@@ -552,7 +602,8 @@ h6 {
 
 @media screen and (max-width: 450px) {
   .homepage__sustainabl-bg-img {
-    height: 64px;
+    margin-top: -38px;
+    margin-bottom: -112px;
   }
 
   .homepage__sustainable-cta h2 {
@@ -565,9 +616,8 @@ h6 {
   margin-top: 76px;
   background-color: #2e788e;
   padding: 24px;
-  margin-right: 4px;
-  margin-left: 4px;
 }
+
 .homepage__heading h2,
 .homepage__text p {
   text-align: center;
@@ -592,7 +642,7 @@ h6 {
 }
 
 .left-footer-info {
-  margin: 0px 0px 4px 4px;
+  margin: 0px 0px 4px 0px;
   padding: 9.7px;
 }
 
@@ -605,7 +655,7 @@ h6 {
 
 .right-footer-container-info {
   flex: 50%;
-  margin: 0px 4px 4px 3px;
+  margin: 0px 0px 4px 3px;
   padding: 10px;
 }
 
@@ -713,14 +763,15 @@ h6 {
 }
 
 .travel-info-page__main-img {
-  background-image: url("/images/faq_page_jumbotron_img_01_resize.jpeg");
+  background-image: url("/images/faq_page_jumbotron_img_02_resize.jpeg");
+}
+
+.homepage__sustainabl-bg-img {
+  background-image: url("/images/sustainability_img_02_resize.jpeg");
 }
 
 .long-hike-page__main-img {
   margin-top: 25px;
-}
-
-.long-hike-page__main-img {
   height: 438px;
 }
 
@@ -779,23 +830,16 @@ h6 {
 .camping-hike-page__text,
 .about-page__text,
 .travel-info-page__text {
-  left: 527px;
   max-width: 800px;
   padding: 30px;
   position: relative;
   text-align: left;
   top: -193px;
-  transform: translate(-50%, -50%);
   z-index: 2;
   color: #707070;
-}
-
-.short-hike-page__btn-show-more,
-.long-hike-page__btn-show-more,
-.camping-hike-page__btn-show-more,
-.about-page__btn-show-more,
-.travel-info-page__btn-show-more {
-  background-color: #9d5f3e;
+  margin-top: -144px;
+  margin-bottom: 196px;
+  margin-left: 47px;
 }
 
 .short-hike-page__btn-show-more,
@@ -809,13 +853,7 @@ h6 {
   font-size: 1.2rem;
   position: relative;
   top: 13px;
-}
-
-.short-hike-page__btn-show-more,
-.long-hike-page__btn-show-more,
-.camping-hike-page__btn-show-more,
-.about-page__btn-show-more,
-.travel-info-page__btn-show-more {
+  background-color: #9d5f3e;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -826,19 +864,12 @@ h6 {
 .long-hike-page__btn-show-more:hover,
 .camping-hike-page__btn-show-more:hover,
 .about-page__btn-show-more:hover,
-.travel-info-page__btn-show-more:hover {
+.travel-info-page__btn-show-more:hover,
+.button:hover,
+.newsletter-btn:hover,
+.homepage__sustainable-cta a:hover,
+.our_guide_btn:hover {
   filter: brightness(115%);
-}
-
-@media screen and (max-width: 850px) {
-  .short-hike-page__text,
-  .long-hike-page__text,
-  .camping-hike-page__tex,
-  .about-page__text,
-  .travel-info-page__text {
-    left: 474px;
-    margin-top: -13px;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -847,9 +878,7 @@ h6 {
   .camping-hike-page__text,
   .about-page__text,
   .travel-info-page__text {
-    left: 57%;
-    margin-top: -30px;
-    margin-bottom: 47px;
+    margin-top: -112px;
   }
 
   .short-hike-page__main-img,
@@ -862,6 +891,7 @@ h6 {
   .travel-info-page__main-img {
     margin-top: -88px;
   }
+
   .short-hike-page__text h1,
   .short-hike-page__text h3,
   .long-hike-page__text h1,
@@ -880,13 +910,18 @@ h6 {
 .short-hikes-trip__heading {
   margin-top: -284px;
 }
-.long-hikes-trip__heading {
+
+.long-hikes-trip__heading,
+.short-hikes-flipCard__heading,
+.long-hikes-flipCard__heading,
+.camping-hikes-flipCard__heading {
   margin-top: -258px;
 }
 
 .camping-hikes-trip__heading {
   margin-top: -258px;
 }
+
 .short-hikes__info,
 .long-hikes__info,
 .camping-hikes__info,
@@ -910,9 +945,17 @@ h6 {
   display: block;
 }
 
+.short-hikes-trip__heading h2,
+.short-hikes-flipCard__heading h2,
+.short-hikes-accordion__heading h2,
+.homepage-popular-hikes__heading h2,
 .short-hikes__heading h2,
 .long-hikes__heading h2,
+.long-hikes-flipCard__heading h2,
+.camping-hikes-flipCard__heading h2,
+.long-hikes-accordion__heading h2,
 .camping-hikes__heading h2,
+.camping-hikes-accordion__heading h2,
 .sustainability__heading h2,
 .travel-info__heading h2 {
   text-align: center;
@@ -967,6 +1010,7 @@ h6 {
   transition: max-height 0.2s ease-out;
   color: #707070;
 }
+
 @media screen and (max-width: 850px) {
   .accordion {
     padding: 20px;
@@ -988,9 +1032,6 @@ h6 {
   text-align: center;
   color: #6c9ead;
   border: 2px solid #707070;
-}
-
-.our_guide_btn {
   width: 100%;
   padding: 16px;
   margin-top: 30px;
@@ -999,14 +1040,12 @@ h6 {
 }
 
 .our_guide_btn:hover {
-  filter: brightness(115%);
   text-decoration: underline;
 }
 
 @media screen and (max-width: 800px) {
   .our_guide_btn {
     top: -17px;
-    position: relative;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1186,15 +1225,13 @@ h6 {
 
 .book-now-main-text {
   background: rgba(255, 255, 255, 0.5);
-  transform: translate(-50%, -50%);
   z-index: 2;
-  left: 50%;
   max-width: 1076px;
   padding: 23px;
   position: relative;
   text-align: center;
-  margin-top: -165px;
-  margin-bottom: 147px;
+  margin-top: -322px;
+  margin-bottom: 308px;
 }
 
 #fname,
@@ -1217,7 +1254,6 @@ h6 {
   font-size: 17px;
   height: 50px;
   margin-top: 27px;
-  margin-right: 46%;
   width: 100%;
   background-color: #007a77;
   color: #ffffff;
@@ -1262,13 +1298,14 @@ h6 {
   #email {
     margin-top: 20px;
     margin-left: -12px;
-    width: 100%;
   }
+
   .book-now-bg-img {
     height: 371px;
   }
+
   .book-now-main-text {
-    margin-top: -185px;
+    margin-top: -372px;
   }
 }
 
@@ -1318,11 +1355,6 @@ option {
 textarea {
   height: 200px;
 }
-
-/* label {
-  margin-bottom: 10px;
-  display: block;
-} */
 
 .btn {
   background-color: #007a77;
