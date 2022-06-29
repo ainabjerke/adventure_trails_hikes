@@ -1150,7 +1150,7 @@ main {
   margin-bottom: 31px;
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1046px) {
   .flex-container {
     flex-direction: column;
     position: relative;
