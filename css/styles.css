@@ -60,6 +60,11 @@ h6 {
   display: none;
 }
 
+.topnav a:hover,
+.dropdown-content a:hover {
+  color: #6c9ead;
+}
+
 .style-nav {
   float: left;
   overflow: hidden;
@@ -112,11 +117,11 @@ h6 {
   color: #6c9ead;
 }
 
-.dropdown-content a:hover {
+/* .dropdown-content a:hover {
   background-color: #ddd;
   border-bottom: #6c9ead solid;
   border-bottom-width: 3px;
-}
+} */
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -834,7 +839,8 @@ main {
   padding: 30px;
   position: relative;
   text-align: left;
-  top: -193px;
+  /* top: -193px; */
+  top: -184px;
   z-index: 2;
   color: #707070;
   margin-top: -144px;
@@ -1064,6 +1070,7 @@ main {
 
 .flex-container__about {
   background-color: #c7d1ce;
+  margin-top: -291px;
 }
 
 .flex-container-item {
@@ -1107,7 +1114,8 @@ main {
 .flex-container__sustainability i {
   margin-left: 10px;
   font-size: 63px;
-  margin-top: 18px;
+  /* margin-top: 18px; */
+  margin-top: 30px;
 }
 
 .flex-item {
@@ -1147,7 +1155,8 @@ main {
 
 .flex-item__sustainability {
   margin-top: -30px;
-  margin-bottom: 31px;
+  /* margin-bottom: 31px; */
+  margin-bottom: 8px;
 }
 
 @media screen and (max-width: 1046px) {
@@ -1191,6 +1200,11 @@ main {
   }
 }
 
+@media screen and (max-width: 940px) {
+  .flex-container__about {
+    margin-top: -338px;
+  }
+}
 @media screen and (max-width: 600px) {
   .flex-container__about img,
   .flex-container__sustainability img {
