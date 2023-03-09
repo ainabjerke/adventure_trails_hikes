@@ -1,4 +1,4 @@
-# Adventure Trail Hike is a website featuring hike trips for men and women 
+# Adventure Trail Hike is a website featuring hike trips 
 Semester Project 1
 
 ![image](https://i.ibb.co/Sf1dRQB/adventure-trail-hikes-webpage-img.jpg)
