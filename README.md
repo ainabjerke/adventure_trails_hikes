@@ -15,7 +15,7 @@ Semester Project 1
 
 ## Description
 
-This project was my semester project through my first year of studies. It is an travel website featuring leissure trips for men and women.
+This project was my semester project during my first year of studies. It is a travel website featuring leisure trips for men and women.
 
 Some features:
 - Responsive layout
@@ -39,7 +39,8 @@ Some features:
 
 URL: https://admirable-blini-f285b3.netlify.app/
 
-You can now play around on the website. Viewing blog posts and searching for a specific posts. 
+You can now play around on the website. Viewing different hike destinations, read more about travel information. The website has also an about section letting the user
+know more about the conmpany and the website also has an contact page.
 
 
 ### How to start the project locally
